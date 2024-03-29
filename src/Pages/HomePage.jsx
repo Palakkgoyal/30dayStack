@@ -9,7 +9,7 @@ const HomePage = () => {
   const techStacks = ["Python", "SQL", "AWS", "Java", "C++", "C#"];
 
   return (
-    <div className="px-5">
+    <div className="px-5 bg-[var(--white)]">
       <h1 className="mt-[8vh] text-5xl text-center font-light">30 dayStack</h1>
       <div className="max-w-[1280px] border-4 mt-[10vh] border-solid border-[var(--black)] rounded-2xl min-h-screen z-[50] mx-auto bg-[var(--white)]">
         <div className="px-5 py-8">

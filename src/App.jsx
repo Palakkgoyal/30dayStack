@@ -1,15 +1,19 @@
 import "./App.css";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { HomePage } from "./Pages";
+import { HomePage, DashBoard, Contact } from "./Pages";
+import { Layout } from "./Components";
 
 const App = () => {
-  const isLoggedIn = false;
+  const isLoggedIn = true;
 
   return (
     <Routes>
       {isLoggedIn ? (
-        <Route path="/" element={<div className="text-black">Showing website content</div>} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<DashBoard />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
       ) : (
         <Route path="/" element={<HomePage />} />
       )}

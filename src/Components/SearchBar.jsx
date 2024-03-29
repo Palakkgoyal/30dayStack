@@ -1,4 +1,5 @@
 const SearchBar = () => {
+    // Will add it later
     return (
         <div>
             Search Bar

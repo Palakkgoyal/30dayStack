@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.big-btn-structure {
+    width: fit-content;
+    font-size: 1.25rem;
+    padding: 1.25rem 2rem;
+    border-radius: 40px;
+}
+
+.banner-img {
+    background-repeat: repeat;
+    background-size: 720px;
+    background-attachment: scroll;
+    width: 100%;
+    background-image: url("https://assets-global.website-files.com/65e1c0c2fd61a5053f5c7bc9/65e58c8d88b3d435697a6fe1_Pattern%201.svg");
+    background-position: 50%;
+    height: 228px;
+}
+
+@media screen and (max-width: 400px) {
+    .big-btn-structure {
+        width: 100%;
+        padding: 0.85rem 1.5rem;
+        font-size: 1rem;
+    }
+}

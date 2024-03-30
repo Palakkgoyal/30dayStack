@@ -50,7 +50,7 @@ const Stats = () => {
         </span>
       </p>
       {enrolled.length > 0 && (
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+        <div className="flex flex-col md:flex-row md:justify-evenly md:items-center">
           <div className="flex justify-between md:flex-col gap-5 mb-10 md:mb-0">
             <div>
               <h4 className="font-semibold text-xl ">Your Remaining Courses</h4>

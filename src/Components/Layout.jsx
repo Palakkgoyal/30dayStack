@@ -9,7 +9,11 @@ const Layout = () => {
   return (
     <div>
       <SideBar />
-      <div className={`${isSmallScreen? "" : "ml-[300px]"} bg-[var(--grey-8)] min-h-screen`}>
+      <div
+        className={`${
+          isSmallScreen ? "" : "ml-[300px]"
+        } bg-[var(--grey-8)] p-1 min-h-screen`}
+      >
         <Outlet />
       </div>
     </div>

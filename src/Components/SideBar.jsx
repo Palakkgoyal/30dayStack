@@ -33,7 +33,7 @@ const SideBar = () => {
     >
       <div className="flex justify-between items-center z-50">
         <h1 className={`${isSmallScreen ? "" : "mb-16"} text-3xl font-medium`}>
-          <span className="text-[var(--blue-violet)]">30</span> DayStack
+          <span className="text-[var(--blue-violet)]">30</span> DaysTask
         </h1>
         {isSmallScreen && (
           <GiHamburgerMenu

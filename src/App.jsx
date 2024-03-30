@@ -5,6 +5,7 @@ import { HomePage, DashBoard, Contact, SplashScreen } from "./Pages";
 import { Layout } from "./Components";
 import { useAuthStateReady } from "./hooks/useAuthStateReady";
 import { useUser } from "./hooks/useUser";
+import { Chart as ChartJS } from "chart.js/auto";
 
 const App = () => {
   const user = useUser();

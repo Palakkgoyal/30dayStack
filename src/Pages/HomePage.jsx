@@ -1,10 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { login } from "../utils/auth";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  function login() {
-    console.log("logging in!");
-  }
 
   const techStacks = ["Python", "SQL", "AWS", "Java", "C++", "C#"];
 

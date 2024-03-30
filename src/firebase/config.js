@@ -3,6 +3,7 @@ import "firebase/compat/firestore";
 import "firebase/compat/storage";
 
 import firebase from "firebase/compat/app";
+import { getAuth } from "firebase/auth";
 
 const app = firebase.initializeApp( {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -14,10 +15,12 @@ const app = firebase.initializeApp( {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 });
 
+
 // Initialize Firebase
 const db = app.firestore();
 const auth = firebase.auth();
+const auth2 = getAuth();
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 const storage = firebase.storage();
 
-export { app, auth, db, googleAuthProvider, storage };
+export { app, auth, db, googleAuthProvider, storage, auth2 };
